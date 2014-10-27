@@ -1,0 +1,15 @@
+<link href='http://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
+<div class='datetime'>
+  <div class="date">
+    <div class="day_of_week"><span data-bind='date.day_of_week'></span></div>
+    <div class="day" data-bind="date.day"></div>
+    <div class="month"><span data-bind="date.month"></span></div>
+  </div>
+
+  <div class="times">
+  <div class="time" data-foreach-item='items'>
+    <div class="face" data-bind="item.time"></div>
+    <div class="location" data-bind="item.zone"></div>
+  </div>
+</div>
+</div>

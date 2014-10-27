@@ -1,0 +1,94 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #dc5945;
+
+// ----------------------------------------------------------------------------
+// Widget-datetime styles
+// ----------------------------------------------------------------------------
+.widget-datetime {
+  padding: 0 !important;
+  background-color: $background-color;
+
+  .date {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    /*height: 50%;*/
+    /*margin: 0 15px 15px 0;*/
+  
+    .day_of_week {
+      background-color: darken($background-color, 15%);
+      border-bottom: 1px solid #333;
+      color: white;
+      text-align: center;
+
+      /*border-radius: 10px 10px 0 0;*/
+      font-size: 30px;
+      font-weight: bold;
+      letter-spacing: 12px;
+      /*box-shadow: 5px 5px 3px #222;*/
+      text-shadow: 5px 5px 10px #222;
+      text-transform: uppercase;
+      span {
+        margin-right: -12px;
+      }
+    }
+    .day, .month {
+      background-color: lighten($background-color, 20%);
+      color: #444;
+      text-align: center;
+      font-weight: bold;
+      /*box-shadow: 5px 5px 3px #222;*/
+      text-shadow: 5px 5px 15px #888;
+    }
+    .day {
+      font-size: 110px;
+      margin: 0;
+      padding: 15px 0 5px 0;
+      line-height: 80px;
+    }
+    .month {
+      font-size: 30px;
+      font-weight: bold;
+      /*border-radius: 0 0 10px 10px;*/
+      letter-spacing: 20px;
+      text-shadow: 5px 5px 15px #888;
+      span {
+        margin-right: -20px;
+      }
+    }
+  }
+  .time {
+    width: 50%;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    .face {
+      font-family: 'Aldrich';
+      font-weight: thin;
+      color: rgb(250, 255, 141);
+      text-shadow: 0 0 0.2em rgb(255, 96, 36), 0 0 0.05em rgb(253, 197, 64);
+      font-size: 50px;
+      line-height: 45px;
+    }
+    .location {
+      color: #ccc;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+  }
+  .times .time:first-child {
+    width: auto;
+    margin-top: 30px;
+    .face {
+      font-size: 110px;
+      margin-bottom: 20px;
+    }
+
+
+  }
+  .times .time:last-child {
+    margin-bottom: 0;
+  }
+}
