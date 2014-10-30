@@ -1,0 +1,57 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #96bf48;
+$title-color:       rgba(255, 255, 255, 0.7);
+$sunrise-color:     darken($background-color, 25%);
+
+// ----------------------------------------------------------------------------
+// Widget-datetime styles
+// ----------------------------------------------------------------------------
+
+.widget-weather-plus {
+  background: $background-color;
+  .title {
+    color: $title-color;
+    font-size: 80%;
+    margin-bottom: 30px;
+  }
+
+  .condition {
+    clear:both;
+    font-size: 90%;
+    color: $title-color;
+    margin-top: -10px;
+    margin-bottom:40px;
+  }
+  .tomorrow {
+    color: $title-color;
+    font-size: 75%;
+  }
+  .sun {
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    left: 0;
+    padding: 0 0 10px 20px;
+    i.wi {
+      float: left;
+      color: $sunrise-color;
+    }
+    p.sunrise {
+      font-size: 75%;
+      color: $sunrise-color;
+      text-align:left;
+      margin-left: 30px;
+    }
+
+  }
+  .moon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 20px 10px 0;
+    color: $sunrise-color;
+  }
+}
+

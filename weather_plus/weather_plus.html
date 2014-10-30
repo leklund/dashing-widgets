@@ -1,0 +1,25 @@
+<h1 class="title" data-bind="title"></h1>
+
+<h2>
+  <span data-bind="temp | raw" class="temp"></span>
+  <i id='icon_now' data-bind-class="wi_icon | prepend 'wi '"></i>
+</h2>
+
+  <p class="condition" data-bind="condition"></p>
+
+<div class="tomorrow">
+  <p>Tomorrow: <span data-bind="tomorrow | raw"></span></p>
+</div>
+
+
+
+<div class='wicons'>
+  <div class='sun'>
+    <i data-bind-class="day_icon | prepend 'wi '"></i>
+    <p data-bind="sun_time" class="sunrise"></p>
+  </div>
+  <div class='moon'>
+    <i data-bind-class="moon_icon | prepend 'wi '"></i>
+  </div>
+</div>
+
